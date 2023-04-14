@@ -1,10 +1,9 @@
 {
   "name": "toolbox-emanuel-friedrich-tech-assessment",
   "version": "1.0.0",
-  "description": "",
   "main": "src/server.js",
   "scripts": {
-    "test": "standard  --env mocha && mocha ./src/test/**",
+    "test": "standard --env mocha && mocha ./src/test/**",
     "start": "node src/server.js",
     "standard:fix": "standard --fix"
   },
