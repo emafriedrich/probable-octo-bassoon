@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "test": "standard --env mocha && mocha ./src/test/**",
+    "test": "standard --env mocha && mocha ./src/test/**/**",
     "start": "node src/server.js",
     "standard:fix": "standard --fix"
   },
