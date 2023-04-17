@@ -1,5 +1,5 @@
 /* eslint-disable */
-const { expect } = require('chai');
+const { expect } = require('chai')
 
 const { isHexa } = require('../../shared/utils')
 
