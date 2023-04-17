@@ -1,8 +1,9 @@
+const { Router } = require('express')
+
 const GetFilesDataUseCase = require('../../../application/use-cases/get-files-data')
 const ExternalApiRepository = require('../../repositories/external-api-repository')
 const { vendorApi } = require('../vendor-api')
 
-const { Router } = require('express')
 
 const router = Router()
 

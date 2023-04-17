@@ -1,11 +1,9 @@
 /* eslint-disable */
 const fs = require('fs')
+const { expect } = require('chai')
 
 const GetFilesDataUseCase = require('../../../application/use-cases/get-files-data')
 const ExternalApiRepository = require('../../../infra/repositories/external-api-repository')
-const { expect } = require('chai')
-
-
 
 describe('Test use case', () => {
 
@@ -39,9 +37,9 @@ describe('Test use case', () => {
     const response = await useCase.execute()
 
     expect(response.find(f => f.file === 'file1.csv').lines).to.eql([])
-    
+
     expect(response.find(f => f.file === 'file2.csv').lines.length).to.eql(1)
-    
+
     expect(response.find(f => f.file === 'file3.csv').lines.length).to.eql(11)
   })
 })
